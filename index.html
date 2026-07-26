@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="IT Solutions & Services HTML Template">
-    <meta name="description" content="Codera - IT Solutions & Services HTML Template">
-
+    <meta name="description"
+        content="Pixel Logic — Premium web design, e-commerce, SEO, and digital marketing agency based in Lucknow, India. Fast delivery and transparent pricing.">
     <!-- title  -->
     <title>PixelLogic | Premium Website Design & Digital Marketing Agency</title>
     <!-- favicon -->
@@ -232,7 +232,7 @@
                                                             href="#" class="butn-style03 sm pulse-btn">
                                                             <span class="text-white">Free
                                                                 Quote
-                                                            </span> 
+                                                            </span>
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -288,7 +288,7 @@
                                     businesses scale in the digital age.
                                 </p>
                                 <div class="d-sm-flex align-items-center">
-                                    <a href="#" class="butn-style03 me-sm-3 mb-3 mb-sm-0" data-bs-toggle="modal"
+                                    <a href="#" class="butn-style03 me-sm-3 mb-sm-0" data-bs-toggle="modal"
                                         data-bs-target="#serviceModal">View Our Work</a>
                                     <a href="#" class="btn btn-outline-light px-4 py-2 rounded-pill"
                                         data-bs-toggle="modal" data-bs-target="#serviceModal">Get
@@ -305,7 +305,7 @@
                         <div class="row align-items-center min-vh-100 pt-6 pt-md-0">
                             <div class="col-md-10 col-xxl-8 mb-1-9 mb-lg-0 pt-6 pb-sm-12 py-sm-6">
                                 <span
-                                    class="text-primary text-uppercase small letter-spacing-4 d-block mb-3 font-weight-700">
+                                    class="text-white text-uppercase small letter-spacing-4 d-block mb-3 font-weight-700">
                                     Design • Develop • Grow
                                 </span>
                                 <h1 class="text-white font-weight-800 ls-minus-2pxs lh-1 mb-1-6 mb-md-1-9 mb-lg-2">
@@ -1332,8 +1332,7 @@
         <script src="js/popper.min.js"></script>
 
         <!-- bootstrap -->
-        <!-- <script src="js/bootstrap.min.js"></script> -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 
         <!-- scroll -->
         <script src="js/jquery.scrollbar.min.js"></script>
@@ -1354,19 +1353,57 @@
         <script src="quform/js/scripts.js"></script>
 
         <script>
-            const fabContainer = document.getElementById('fabContainer');
-            const fabToggle = document.getElementById('fabToggle');
+            document.addEventListener('DOMContentLoaded', function () {
+                const fabContainer = document.getElementById('fabContainer');
+                const fabToggle = document.getElementById('fabToggle');
 
-            // Toggle menu expansion
-            fabToggle.addEventListener('click', (e) => {
-                e.stopPropagation();
-                fabContainer.classList.toggle('active');
+                if (fabToggle && fabContainer) {
+                    fabToggle.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                        fabContainer.classList.toggle('active');
+                    });
+
+                    document.addEventListener('click', function (event) {
+                        if (!fabContainer.contains(event.target)) {
+                            fabContainer.classList.remove('active');
+                        }
+                    });
+                }
             });
 
-            // Close options when clicking outside the container
-            document.addEventListener('click', (event) => {
-                if (!fabContainer.contains(event.target)) {
-                    fabContainer.classList.remove('active');
+            document.getElementById('whatsappModalForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Pixel Logic WhatsApp Contact Number
+                const phoneNumber = "918853693416";
+
+                // Read form field inputs
+                const name = document.getElementById('modalUserName').value.trim();
+                const phone = document.getElementById('modalUserPhone').value.trim();
+                const service = document.getElementById('modalServiceSelect').value;
+                const message = document.getElementById('modalUserMessage').value.trim();
+
+                // Build structured WhatsApp message text
+                let text = `*New Website Service Query*\n\n`;
+                text += `*Name:* ${name}\n`;
+                text += `*Phone:* ${phone}\n`;
+                text += `*Selected Service:* ${service}\n`;
+
+                if (message) {
+                    text += `*Details:* ${message}\n`;
+                }
+
+                // Encode special characters and linebreaks
+                const encodedText = encodeURIComponent(text);
+
+                // Open WhatsApp chat
+                window.open(`https://wa.me/${phoneNumber}?text=${encodedText}`, '_blank');
+
+                // Hide modal automatically after submission
+                const modalElement = document.getElementById('serviceModal');
+                const modalInstance = bootstrap.Modal.getInstance(modalElement);
+                if (modalInstance) {
+                    modalInstance.hide();
                 }
             });
         </script>
