@@ -127,11 +127,17 @@
                                     <div class="attr-nav align-items-xl-center ms-xl-auto main-font">
                                         <ul>
                                             <li class="search"><a href="#"><i class="fas fa-search"></i></a></li>
-                                            <li class="d-none d-xl-inline-block"><a href="#"
-                                                    class="butn-style03 sm"><span class="text-white">Free
-                                                        Quote</span></a></li>
+                                            <li class="d-none d-xl-inline-block">
+                                                <a data-bs-toggle="modal" data-bs-target="#serviceModal" href="#"
+                                                    class="butn-style03 sm pulse-btn">
+                                                    <span class="text-white">Free
+                                                        Quote
+                                                    </span>
+                                                </a>
+                                            </li>
                                         </ul>
                                     </div>
+
                                     <!-- end attribute navigation -->
                                 </nav>
                             </div>
@@ -164,8 +170,10 @@
                                     businesses scale in the digital age.
                                 </p>
                                 <div class="d-sm-flex align-items-center">
-                                    <a href="#" class="butn-style03 me-sm-3 mb-3 mb-sm-0">View Our Work</a>
-                                    <a href="#" class="btn btn-outline-light px-4 py-2 rounded-pill">Get
+                                    <a href="#" class="butn-style03 me-sm-3 mb-3 mb-sm-0" data-bs-toggle="modal"
+                                        data-bs-target="#serviceModal">View Our Work</a>
+                                    <a href="#" class="btn btn-outline-light px-4 py-2 rounded-pill"
+                                        data-bs-toggle="modal" data-bs-target="#serviceModal">Get
                                         Started</a>
                                 </div>
                             </div>
@@ -179,7 +187,7 @@
                         <div class="row align-items-center min-vh-100 pt-6 pt-md-0">
                             <div class="col-md-10 col-xxl-8 mb-1-9 mb-lg-0 pt-6 pb-sm-12 py-sm-6">
                                 <span
-                                    class="text-white text-uppercase small letter-spacing-4 d-block mb-3 font-weight-700">
+                                    class="text-primary text-uppercase small letter-spacing-4 d-block mb-3 font-weight-700">
                                     Design • Develop • Grow
                                 </span>
                                 <h1 class="text-white font-weight-800 ls-minus-2pxs lh-1 mb-1-6 mb-md-1-9 mb-lg-2">
@@ -189,7 +197,8 @@
                                     We specialize in clean, modern designs and creative visuals that give your business
                                     a premium competitive edge.
                                 </p>
-                                <a href="#" class="butn-style03">View Portfolio</a>
+                                <a href="#" class="butn-style03" data-bs-toggle="modal"
+                                    data-bs-target="#serviceModal">View Portfolio</a>
                             </div>
                         </div>
                     </div>
@@ -212,7 +221,8 @@
                                     From e-commerce stores to custom CRM solutions, we build fast and scalable tools
                                     designed to drive your revenue.
                                 </p>
-                                <a href="#" class="butn-style03">Start Your Project</a>
+                                <a href="#" class="butn-style03" data-bs-toggle="modal"
+                                    data-bs-target="#serviceModal">Start Your Project</a>
                             </div>
                         </div>
                     </div>
@@ -401,147 +411,171 @@
                     </div>
                 </div>
             </div>
-           <div class="container">
-    <div class="row mt-n1-9">
-        <!-- Service 1: Web Design & Development -->
-        <div class="col-md-6 col-xl-4 mt-1-9 wow fadeInUp" data-wow-delay="100ms">
-            <div class="card card-style03 h-100 rounded">
-                <div class="card-content z-index-9 position-relative d-flex flex-column justify-content-between">
-                    <div>
-                        <div class="service-icon">
-                            <img src="img/icons/icon-15.png" alt="Web Design" class="w-40px">
-                        </div>
-                        <h3 class="mb-2"><a href="#">Website Design & Dev</a></h3>
-                        <div class="service-price my-4">
-                            <span class="badge bg-primary fs-6 px-3 py-2 rounded-pill">Starting at ₹7,999</span>
+            <div class="container">
+                <div class="row mt-n1-9">
+                    <!-- Service 1: Web Design & Development -->
+                    <div class="col-md-6 col-xl-4 mt-1-9 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="card card-style03 h-100 rounded">
+                            <div
+                                class="card-content z-index-9 position-relative d-flex flex-column justify-content-between">
+                                <div>
+                                    <div class="service-icon">
+                                        <img src="img/icons/icon-15.png" alt="Web Design" class="w-40px">
+                                    </div>
+                                    <h3 class="mb-2"><a href="#">Website Design & Dev</a></h3>
+                                    <div class="service-price my-4">
+                                        <span class="badge bg-primary fs-6 px-3 py-2 rounded-pill">Starting at
+                                            ₹7,999</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="mb-1-6">Custom, SEO-friendly websites with modern UI and responsive
+                                        layouts designed to convert visitors into customers.</p>
+                                    <a href="#"><span class="butn-link">Explore Design</span><i
+                                            class="ti-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body bg-img p-0 rounded" data-background="img/services/service-04.jpg">
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <p class="mb-1-6">Custom, SEO-friendly websites with modern UI and responsive layouts designed to convert visitors into customers.</p>
-                        <a href="#"><span class="butn-link">Explore Design</span><i class="ti-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="card-body bg-img p-0 rounded" data-background="img/services/service-04.jpg">
-                </div>
-            </div>
-        </div>
 
-        <!-- Service 2: E-Commerce Websites -->
-        <div class="col-md-6 col-xl-4 mt-1-9 wow fadeInUp" data-wow-delay="200ms">
-            <div class="card card-style03 h-100 rounded">
-                <div class="card-content z-index-9 position-relative d-flex flex-column justify-content-between">
-                    <div>
-                        <div class="service-icon">
-                            <img src="img/icons/icon-19.png" alt="E-Commerce Website" class="w-40px">
-                        </div>
-                        <h3 class="mb-2"><a href="#">E-Commerce Websites</a></h3>
-                        <div class="service-price my-4">
-                            <span class="badge bg-primary fs-6 px-3 py-2 rounded-pill">Starting at ₹19,999</span>
+                    <!-- Service 2: E-Commerce Websites -->
+                    <div class="col-md-6 col-xl-4 mt-1-9 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="card card-style03 h-100 rounded">
+                            <div
+                                class="card-content z-index-9 position-relative d-flex flex-column justify-content-between">
+                                <div>
+                                    <div class="service-icon">
+                                        <img src="img/icons/icon-19.png" alt="E-Commerce Website" class="w-40px">
+                                    </div>
+                                    <h3 class="mb-2"><a href="#">E-Commerce Websites</a></h3>
+                                    <div class="service-price my-4">
+                                        <span class="badge bg-primary fs-6 px-3 py-2 rounded-pill">Starting at
+                                            ₹19,999</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="mb-1-6">Full-featured online stores built on Shopify, WooCommerce, or
+                                        Laravel with integrated payment gateways and inventory tracking.</p>
+                                    <a href="#"><span class="butn-link">Build Store</span><i
+                                            class="ti-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body bg-img p-0 rounded" data-background="img/services/service-08.jpg">
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <p class="mb-1-6">Full-featured online stores built on Shopify, WooCommerce, or Laravel with integrated payment gateways and inventory tracking.</p>
-                        <a href="#"><span class="butn-link">Build Store</span><i class="ti-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="card-body bg-img p-0 rounded" data-background="img/services/service-08.jpg">
-                </div>
-            </div>
-        </div>
 
-        <!-- Service 3: SEO Services -->
-        <div class="col-md-6 col-xl-4 mt-1-9 wow fadeInUp" data-wow-delay="300ms">
-            <div class="card card-style03 h-100 rounded">
-                <div class="card-content z-index-9 position-relative d-flex flex-column justify-content-between">
-                    <div>
-                        <div class="service-icon">
-                            <img src="img/icons/icon-20.png" alt="SEO Services" class="w-40px">
-                        </div>
-                        <h3 class="mb-2"><a href="#">SEO & Search Optimization</a></h3>
-                        <div class="service-price my-4">
-                            <span class="badge bg-primary fs-6 px-3 py-2 rounded-pill">Starting at ₹4,999</span>
+                    <!-- Service 3: SEO Services -->
+                    <div class="col-md-6 col-xl-4 mt-1-9 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="card card-style03 h-100 rounded">
+                            <div
+                                class="card-content z-index-9 position-relative d-flex flex-column justify-content-between">
+                                <div>
+                                    <div class="service-icon">
+                                        <img src="img/icons/icon-20.png" alt="SEO Services" class="w-40px">
+                                    </div>
+                                    <h3 class="mb-2"><a href="#">SEO & Search Optimization</a></h3>
+                                    <div class="service-price my-4">
+                                        <span class="badge bg-primary fs-6 px-3 py-2 rounded-pill">Starting at
+                                            ₹4,999</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="mb-1-6">Search visibility packages including keyword research, technical
+                                        SEO, Google Business Profile tuning, and ongoing ranking growth.</p>
+                                    <a href="#"><span class="butn-link">Rank Higher</span><i
+                                            class="ti-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body bg-img p-0 rounded" data-background="img/services/service-09.jpg">
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <p class="mb-1-6">Search visibility packages including keyword research, technical SEO, Google Business Profile tuning, and ongoing ranking growth.</p>
-                        <a href="#"><span class="butn-link">Rank Higher</span><i class="ti-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="card-body bg-img p-0 rounded" data-background="img/services/service-09.jpg">
-                </div>
-            </div>
-        </div>
 
-        <!-- Service 4: Digital Marketing -->
-        <div class="col-md-6 col-xl-4 mt-1-9 wow fadeInUp" data-wow-delay="400ms">
-            <div class="card card-style03 h-100 rounded">
-                <div class="card-content z-index-9 position-relative d-flex flex-column justify-content-between">
-                    <div>
-                        <div class="service-icon">
-                            <img src="img/icons/icon-16.png" alt="Digital Marketing" class="w-40px">
-                        </div>
-                        <h3 class="mb-2"><a href="#">Digital Marketing</a></h3>
-                        <div class="service-price my-4">
-                            <span class="badge bg-primary fs-6 px-3 py-2 rounded-pill">Starting at ₹3,999</span>
+                    <!-- Service 4: Digital Marketing -->
+                    <div class="col-md-6 col-xl-4 mt-1-9 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="card card-style03 h-100 rounded">
+                            <div
+                                class="card-content z-index-9 position-relative d-flex flex-column justify-content-between">
+                                <div>
+                                    <div class="service-icon">
+                                        <img src="img/icons/icon-16.png" alt="Digital Marketing" class="w-40px">
+                                    </div>
+                                    <h3 class="mb-2"><a href="#">Digital Marketing</a></h3>
+                                    <div class="service-price my-4">
+                                        <span class="badge bg-primary fs-6 px-3 py-2 rounded-pill">Starting at
+                                            ₹3,999</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="mb-1-6">Result-driven Google and Meta Ad campaigns focused on lead
+                                        generation, audience targeting, and scaling your online sales.</p>
+                                    <a href="#"><span class="butn-link">Scale Now</span><i
+                                            class="ti-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body bg-img p-0 rounded" data-background="img/services/service-05.jpg">
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <p class="mb-1-6">Result-driven Google and Meta Ad campaigns focused on lead generation, audience targeting, and scaling your online sales.</p>
-                        <a href="#"><span class="butn-link">Scale Now</span><i class="ti-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="card-body bg-img p-0 rounded" data-background="img/services/service-05.jpg">
-                </div>
-            </div>
-        </div>
 
-        <!-- Service 5: Branding & Creative -->
-        <div class="col-md-6 col-xl-4 mt-1-9 wow fadeInUp" data-wow-delay="500ms">
-            <div class="card card-style03 h-100 rounded">
-                <div class="card-content z-index-9 position-relative d-flex flex-column justify-content-between">
-                    <div>
-                        <div class="service-icon">
-                            <img src="img/icons/icon-17.png" alt="Branding" class="w-40px">
-                        </div>
-                        <h3 class="mb-2"><a href="#">Branding & Creative</a></h3>
-                        <div class="service-price my-4">
-                            <span class="badge bg-primary fs-6 px-3 py-2 rounded-pill">Starting at ₹299</span>
+                    <!-- Service 5: Branding & Creative -->
+                    <div class="col-md-6 col-xl-4 mt-1-9 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="card card-style03 h-100 rounded">
+                            <div
+                                class="card-content z-index-9 position-relative d-flex flex-column justify-content-between">
+                                <div>
+                                    <div class="service-icon">
+                                        <img src="img/icons/icon-17.png" alt="Branding" class="w-40px">
+                                    </div>
+                                    <h3 class="mb-2"><a href="#">Branding & Creative</a></h3>
+                                    <div class="service-price my-4">
+                                        <span class="badge bg-primary fs-6 px-3 py-2 rounded-pill">Starting at
+                                            ₹299</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="mb-1-6">Logos, brand guidelines, social media posts, packaging, and
+                                        stationeries designed with a minimal and cohesive aesthetic.</p>
+                                    <a href="#"><span class="butn-link">View Portfolio</span><i
+                                            class="ti-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body bg-img p-0 rounded" data-background="img/services/service-06.jpg">
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <p class="mb-1-6">Logos, brand guidelines, social media posts, packaging, and stationeries designed with a minimal and cohesive aesthetic.</p>
-                        <a href="#"><span class="butn-link">View Portfolio</span><i class="ti-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="card-body bg-img p-0 rounded" data-background="img/services/service-06.jpg">
-                </div>
-            </div>
-        </div>
 
-        <!-- Service 6: Website Maintenance & Support -->
-        <div class="col-md-6 col-xl-4 mt-1-9 wow fadeInUp" data-wow-delay="600ms">
-            <div class="card card-style03 h-100 rounded">
-                <div class="card-content z-index-9 position-relative d-flex flex-column justify-content-between">
-                    <div>
-                        <div class="service-icon">
-                            <img src="img/icons/icon-18.png" alt="Website Maintenance" class="w-40px">
-                        </div>
-                        <h3 class="mb-2"><a href="#">Maintenance & Support</a></h3>
-                        <div class="service-price my-4">
-                            <span class="badge bg-primary fs-6 px-3 py-2 rounded-pill">Starting at ₹1,499/mo</span>
+                    <!-- Service 6: Website Maintenance & Support -->
+                    <div class="col-md-6 col-xl-4 mt-1-9 wow fadeInUp" data-wow-delay="600ms">
+                        <div class="card card-style03 h-100 rounded">
+                            <div
+                                class="card-content z-index-9 position-relative d-flex flex-column justify-content-between">
+                                <div>
+                                    <div class="service-icon">
+                                        <img src="img/icons/icon-18.png" alt="Website Maintenance" class="w-40px">
+                                    </div>
+                                    <h3 class="mb-2"><a href="#">Maintenance & Support</a></h3>
+                                    <div class="service-price my-4">
+                                        <span class="badge bg-primary fs-6 px-3 py-2 rounded-pill">Starting at
+                                            ₹1,499/mo</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="mb-1-6">Automated backups, security updates, SSL assistance, speed
+                                        optimization, and bug fixes to keep your site fast and safe.</p>
+                                    <a href="#"><span class="butn-link">Get Protected</span><i
+                                            class="ti-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body bg-img p-0 rounded" data-background="img/services/service-07.jpg">
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <p class="mb-1-6">Automated backups, security updates, SSL assistance, speed optimization, and bug fixes to keep your site fast and safe.</p>
-                        <a href="#"><span class="butn-link">Get Protected</span><i class="ti-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="card-body bg-img p-0 rounded" data-background="img/services/service-07.jpg">
                 </div>
             </div>
-        </div>
-    </div>
-</div>
         </section>
 
 
@@ -823,7 +857,8 @@
                             with custom e-commerce stores, result-driven ads, and professional brand identities.
                         </p>
                         <div class="d-flex justify-content-center">
-                            <a href="#" class="butn-style03">Design • Develop • Grow</a>
+                            <a href="#" class="butn-style03" data-bs-toggle="modal"
+                                data-bs-target="#serviceModal">Design • Develop • Grow</a>
                         </div>
                     </div>
                 </div>
@@ -961,7 +996,8 @@
                 </div>
                 <div class="row mb-2-6 mb-sm-6 mb-md-8 mt-n2-9">
                     <div class="col-lg-4 col-xxl-5 mt-2-9">
-                        <a href="#" class="circle-btn01 animation-up-down white mb-5">Start Growing</a>
+                        <a href="#" class="circle-btn01 animation-up-down white mb-5" data-bs-toggle="modal"
+                            data-bs-target="#serviceModal">Start Growing</a>
                         <div class="cd-headline clip font-weight-400 text-primary d-block">
                             <span class="cd-words-wrapper">
                                 <link rel="stylesheet" href="">
@@ -1145,79 +1181,194 @@
                 info@pixellogic.in</a>
         </div>
 
-    </div>
 
-    <!-- SCROLL TO TOP
+
+
+        <!-- Service Inquiry Modal -->
+        <div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow-lg rounded-4">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header border-bottom-0 pb-0">
+                        <h1 class="modal-title fs-4 fw-bold" id="serviceModalLabel">Get a Free Quote</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <!-- Modal Body & Form -->
+                    <div class="modal-body text-start pt-2">
+                        <p class="text-muted small mb-4">Select a service package and submit to chat directly with
+                            us on WhatsApp.</p>
+
+                        <form id="whatsappModalForm">
+                            <!-- Name Field -->
+                            <div class="mb-3">
+                                <label for="modalUserName" class="form-label fw-medium">Your Name *</label>
+                                <input type="text" class="form-control" id="modalUserName"
+                                    placeholder="Enter your full name" required>
+                            </div>
+
+                            <!-- Phone Number Field -->
+                            <div class="mb-3">
+                                <label for="modalUserPhone" class="form-label fw-medium">Phone Number *</label>
+                                <input type="tel" class="form-control" id="modalUserPhone"
+                                    placeholder="Enter your mobile number" required>
+                            </div>
+
+                            <!-- Service Selection Dropdown -->
+                            <div class="mb-3">
+                                <label for="modalServiceSelect" class="form-label fw-medium">Select Service
+                                    *</label>
+                                <select class="form-select" id="modalServiceSelect" required>
+                                    <option value="" selected disabled>Choose a service...</option>
+
+                                    <!-- Website Packages -->
+                                    <optgroup label="Website Design & Development">
+                                        <option value="Starter Website (₹7,999)">Starter Website — ₹7,999</option>
+                                        <option value="Business Website (₹14,999)">Business Website — ₹14,999
+                                        </option>
+                                        <option value="Premium Website (₹24,999)">Premium Website — ₹24,999</option>
+                                    </optgroup>
+
+                                    <!-- E-Commerce Packages -->
+                                    <optgroup label="E-Commerce Stores">
+                                        <option value="Shopify Store (Starting ₹24,999)">Shopify Store — Starting
+                                            ₹24,999</option>
+                                        <option value="WooCommerce Store (Starting ₹19,999)">WooCommerce Store —
+                                            Starting ₹19,999</option>
+                                        <option value="Laravel E-Commerce (Starting ₹39,999)">Laravel E-Commerce —
+                                            Starting ₹39,999</option>
+                                    </optgroup>
+
+                                    <!-- SEO Packages -->
+                                    <optgroup label="SEO Services">
+                                        <option value="Basic SEO Setup (₹4,999)">Basic SEO (One-time) — ₹4,999
+                                        </option>
+                                        <option value="Standard SEO (₹7,999/mo)">Standard SEO — ₹7,999/month
+                                        </option>
+                                        <option value="Premium SEO (₹14,999/mo)">Premium SEO — ₹14,999/month
+                                        </option>
+                                    </optgroup>
+
+                                    <!-- Digital Marketing -->
+                                    <optgroup label="Digital Marketing">
+                                        <option value="Google/Meta Ads Setup (₹3,999)">Google/Meta Ads Setup —
+                                            ₹3,999</option>
+                                        <option value="Monthly Ads Management (₹7,999/mo)">Monthly Ads Management —
+                                            ₹7,999/month</option>
+                                    </optgroup>
+
+                                    <!-- Branding & Graphic Design -->
+                                    <optgroup label="Branding & Design">
+                                        <option value="Logo Design (₹999)">Logo Design — ₹999</option>
+                                        <option value="Brand Identity Package (₹4,999)">Full Brand Identity — ₹4,999
+                                        </option>
+                                        <option value="Social Media Graphics (Starting ₹299)">Graphic Design —
+                                            Starting ₹299</option>
+                                    </optgroup>
+
+                                    <!-- Maintenance -->
+                                    <optgroup label="Maintenance & Support">
+                                        <option value="Website Maintenance (₹1,499/mo)">Website Maintenance —
+                                            ₹1,499/month</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+
+                            <!-- Message Field -->
+                            <div class="mb-4">
+                                <label for="modalUserMessage" class="form-label fw-medium">Project Details
+                                    (Optional)</label>
+                                <textarea class="form-control" id="modalUserMessage" rows="3"
+                                    placeholder="Tell us briefly about your business or specific requirements..."></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit"
+                                class="btn btn-whatsapp-custom w-100 py-3 rounded-3 d-flex align-items-center justify-content-center gap-2">
+                                <i class="fa-brands fa-whatsapp fs-4 whatsapp-icon"></i>
+                                <span>Send Query via WhatsApp</span>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- SCROLL TO TOP
     ================================================== -->
-    <div class="scroll-top-percentage"><span id="scroll-value"></span></div>
+        <div class="scroll-top-percentage"><span id="scroll-value"></span></div>
 
-    <!-- Floating Action Group -->
-    <div class="fab-container" id="fabContainer">
-        <!-- Main Toggle Button -->
-        <button class="fab-btn fab-toggle" id="fabToggle" aria-label="Toggle contact options" data-tooltip="Contact Us">
-            <i class="fa-solid fa-plus"></i>
-        </button>
+        <!-- Floating Action Group -->
+        <div class="fab-container" id="fabContainer">
+            <!-- Main Toggle Button -->
+            <button class="fab-btn fab-toggle" id="fabToggle" aria-label="Toggle contact options"
+                data-tooltip="Contact Us">
+                <i class="fa-solid fa-plus"></i>
+            </button>
 
-        <!-- WhatsApp Button -->
-        <a href="https://wa.me/918853693416?text=Hello!%20I'd%20like%20more%20information." target="_blank"
-            rel="noopener noreferrer" class="fab-btn fab-item fab-whatsapp" data-tooltip="WhatsApp">
-            <i class="fa-brands fa-whatsapp"></i>
-        </a>
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/918853693416?text=Hello!%20I'd%20like%20more%20information." target="_blank"
+                rel="noopener noreferrer" class="fab-btn fab-item fab-whatsapp" data-tooltip="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
 
-        <!-- Phone Call Button -->
-        <a href="tel:+918853693416" class="fab-btn fab-item fab-phone" data-tooltip="Call Us">
-            <i class="fa-solid fa-phone"></i>
-        </a>
-    </div>
+            <!-- Phone Call Button -->
+            <a href="tel:+918853693416" class="fab-btn fab-item fab-phone" data-tooltip="Call Us">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+        </div>
 
-    <!-- all js include start -->
+        <!-- all js include start -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
 
-    <!-- popper js -->
-    <script src="js/popper.min.js"></script>
+        <!-- popper js -->
+        <script src="js/popper.min.js"></script>
 
-    <!-- bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
+        <!-- bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
 
-    <!-- scroll -->
-    <script src="js/jquery.scrollbar.min.js"></script>
+        <!-- scroll -->
+        <script src="js/jquery.scrollbar.min.js"></script>
 
-    <!-- jquery -->
-    <script src="js/core.min.js"></script>
+        <!-- jquery -->
+        <script src="js/core.min.js"></script>
 
-    <!-- search -->
-    <script src="search/search.js"></script>
+        <!-- search -->
+        <script src="search/search.js"></script>
 
-    <!-- custom scripts -->
-    <script src="js/main.js"></script>
+        <!-- custom scripts -->
+        <script src="js/main.js"></script>
 
-    <!-- form plugins js -->
-    <script src="quform/js/plugins.js"></script>
+        <!-- form plugins js -->
+        <script src="quform/js/plugins.js"></script>
 
-    <!-- form scripts js -->
-    <script src="quform/js/scripts.js"></script>
+        <!-- form scripts js -->
+        <script src="quform/js/scripts.js"></script>
 
-    <script>
-        const fabContainer = document.getElementById('fabContainer');
-        const fabToggle = document.getElementById('fabToggle');
+        <script>
+            const fabContainer = document.getElementById('fabContainer');
+            const fabToggle = document.getElementById('fabToggle');
 
-        // Toggle menu expansion
-        fabToggle.addEventListener('click', (e) => {
-            e.stopPropagation();
-            fabContainer.classList.toggle('active');
-        });
+            // Toggle menu expansion
+            fabToggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                fabContainer.classList.toggle('active');
+            });
 
-        // Close options when clicking outside the container
-        document.addEventListener('click', (event) => {
-            if (!fabContainer.contains(event.target)) {
-                fabContainer.classList.remove('active');
-            }
-        });
-    </script>
+            // Close options when clicking outside the container
+            document.addEventListener('click', (event) => {
+                if (!fabContainer.contains(event.target)) {
+                    fabContainer.classList.remove('active');
+                }
+            });
+        </script>
 
-    <!-- all js include end -->
+        <!-- all js include end -->
 
 </body>
 

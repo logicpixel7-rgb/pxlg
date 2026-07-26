@@ -7675,3 +7675,77 @@ footer label {
       opacity: 1;
       visibility: visible;
     }
+
+    .inquiry-card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      background: #ffffff;
+    }
+
+    /* Infinite Eye-Catching Animation */
+.pulse-btn {
+  position: relative;
+  display: inline-block;
+  animation: fabPulse 2s infinite ease-in-out;
+  box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7); /* Adjust color match to your site theme */
+}
+
+/* Pause animation on hover for smooth interaction */
+.pulse-btn:hover {
+  animation-play-state: paused;
+}
+
+@keyframes fabPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7);
+  }
+  50% {
+    transform: scale(1.06); /* Subtle size jump */
+    box-shadow: 0 0 0 12px rgba(37, 99, 235, 0); /* Expanding outer ring */
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+  }
+}
+
+.btn-whatsapp-custom {
+  /* WhatsApp Brand Gradients */
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+
+/* Icon Animation Base */
+.btn-whatsapp-custom .whatsapp-icon {
+  transition: transform 0.3s ease;
+}
+
+/* --- Hover State --- */
+.btn-whatsapp-custom:hover {
+  background: linear-gradient(135deg, #28e06c 0%, #159e8e 100%);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(37, 211, 102, 0.5);
+}
+
+/* Slight wiggle/bounce for the WhatsApp icon on hover */
+.btn-whatsapp-custom:hover .whatsapp-icon {
+  transform: scale(1.15) rotate(-8deg);
+}
+
+/* --- Active / Click State --- */
+.btn-whatsapp-custom:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
