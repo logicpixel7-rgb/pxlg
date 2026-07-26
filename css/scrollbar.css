@@ -1188,12 +1188,12 @@
 .wlt-sidebar-main .wlt-banner-section {
     padding: 8px 30px
 }
-
+/* 
 @media (max-width: 991px) {
     .wlt-sidebar-main {
         display: none !important
     }
-}
+} */
 
 .scroll-wrapper {
     overflow: hidden !important;

@@ -7559,35 +7559,8 @@ footer label {
       background-color: #f4f6f8;
       min-height: 100vh;
     }
-    /* Mobile Display & Stacking Override for FAB */
-@media (max-width: 767.98px) {
-  .fab-container {
-    display: flex !important; /* Forces visibility even if theme hides it */
-    position: fixed !important;
-    bottom: 20px !important;
-    right: 20px !important;
-    z-index: 999999 !important; /* Keeps it above footers & mobile navbars */
-    pointer-events: auto !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-  }
 
-  /* Prevent overflow issues on smaller screens */
-  .fab-btn {
-    width: 50px !important;
-    height: 50px !important;
-  }
-
-  .fab-btn i {
-    font-size: 20px !important;
-  }
-
-  /* Hide hover tooltips on touch screens (mobile users tap directly) */
-  .fab-btn::before {
-    display: none !important;
-  }
-}
-
+    /* Floating Action Button Container */
     .fab-container {
       position: fixed;
       bottom: 30px;
@@ -7795,13 +7768,12 @@ footer label {
   
   .modal {
     z-index: 100001 !important;
-    padding-right: 0 !important;
   }
 
   /* Prevent theme layout transforms from clipping the mobile dialog */
   .modal-dialog {
-    margin: 1rem auto !important;
-    width: 100% !important;
+    margin: 0rem auto !important;
+    width: 92% !important;
   }
   
   .modal-content {
