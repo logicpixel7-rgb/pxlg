@@ -34,6 +34,108 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content border-0 shadow-lg rounded-4">
+
+                        <div class="modal-header border-bottom-0 pb-0">
+                            <h1 class="modal-title fs-4 fw-bold" id="serviceModalLabel">Get a Free Quote</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body text-start pt-2">
+                            <p class="text-muted small mb-4">Select a service package and submit to chat directly with
+                                us on WhatsApp.</p>
+
+                            <form id="whatsappModalForm">
+                                <div class="mb-3">
+                                    <label for="modalUserName" class="form-label fw-medium">Your Name *</label>
+                                    <input type="text" class="form-control" id="modalUserName"
+                                        placeholder="Enter your full name" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="modalUserPhone" class="form-label fw-medium">Phone Number *</label>
+                                    <input type="tel" class="form-control" id="modalUserPhone"
+                                        placeholder="Enter your mobile number" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="modalServiceSelect" class="form-label fw-medium">Select Service
+                                        *</label>
+                                    <select class="form-select" id="modalServiceSelect" required>
+                                        <option value="" selected disabled>Choose a service...</option>
+
+                                        <optgroup label="Website Design & Development">
+                                            <option value="Starter Website (₹7,999)">Starter Website — ₹7,999</option>
+                                            <option value="Business Website (₹14,999)">Business Website — ₹14,999
+                                            </option>
+                                            <option value="Premium Website (₹24,999)">Premium Website — ₹24,999</option>
+                                        </optgroup>
+
+                                        <optgroup label="E-Commerce Stores">
+                                            <option value="Shopify Store (Starting ₹24,999)">Shopify Store — Starting
+                                                ₹24,999</option>
+                                            <option value="WooCommerce Store (Starting ₹19,999)">WooCommerce Store —
+                                                Starting ₹19,999</option>
+                                            <option value="Laravel E-Commerce (Starting ₹39,999)">Laravel E-Commerce —
+                                                Starting ₹39,999</option>
+                                        </optgroup>
+
+                                        <optgroup label="SEO Services">
+                                            <option value="Basic SEO Setup (₹4,999)">Basic SEO (One-time) — ₹4,999
+                                            </option>
+                                            <option value="Standard SEO (₹7,999/mo)">Standard SEO — ₹7,999/month
+                                            </option>
+                                            <option value="Premium SEO (₹14,999/mo)">Premium SEO — ₹14,999/month
+                                            </option>
+                                        </optgroup>
+
+                                        <optgroup label="Digital Marketing">
+                                            <option value="Google/Meta Ads Setup (₹3,999)">Google/Meta Ads Setup —
+                                                ₹3,999</option>
+                                            <option value="Monthly Ads Management (₹7,999/mo)">Monthly Ads Management —
+                                                ₹7,999/month</option>
+                                        </optgroup>
+
+                                        <optgroup label="Branding & Design">
+                                            <option value="Logo Design (₹999)">Logo Design — ₹999</option>
+                                            <option value="Brand Identity Package (₹4,999)">Full Brand Identity — ₹4,999
+                                            </option>
+                                            <option value="Social Media Graphics (Starting ₹299)">Graphic Design —
+                                                Starting ₹299</option>
+                                        </optgroup>
+
+                                        <optgroup label="Maintenance & Support">
+                                            <option value="Website Maintenance (₹1,499/mo)">Website Maintenance —
+                                                ₹1,499/month</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="modalUserMessage" class="form-label fw-medium">Project Details
+                                        (Optional)</label>
+                                    <textarea class="form-control" id="modalUserMessage" rows="3"
+                                        placeholder="Tell us briefly about your business..."></textarea>
+                                </div>
+
+                                <button type="submit"
+                                    class="btn btn-whatsapp-custom w-100 py-3 rounded-3 d-flex align-items-center justify-content-center gap-2">
+                                    <i class="fa-brands fa-whatsapp fs-4"></i>
+                                    Send Query via WhatsApp
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- PAGE LOADING
     ================================================== -->
@@ -119,6 +221,22 @@
                                         </li>
                                         <li>
                                             <a href="#">Contact</a>
+                                        </li>
+                                        <li>
+                                            <div class="attr-nav align-items-xl-center ms-xl-auto main-font">
+                                                <ul>
+                                                    <li class="search"><a href="#"><i class="fas fa-search"></i></a>
+                                                    </li>
+                                                    <li class="d-none d-xl-inline-block">
+                                                        <a data-bs-toggle="modal" data-bs-target="#serviceModal"
+                                                            href="#" class="butn-style03 sm pulse-btn">
+                                                            <span class="text-white">Free
+                                                                Quote
+                                                            </span> 
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </li>
                                     </ul>
                                     <!-- end menu area -->
@@ -474,7 +592,7 @@
                                 class="card-content z-index-9 position-relative d-flex flex-column justify-content-between">
                                 <div>
                                     <div class="service-icon">
-                                        <img src="img/icons/icon-20.png" alt="SEO Services" class="w-40px">
+                                        <img src="img/icons/icon-19.png" alt="SEO Services" class="w-40px">
                                     </div>
                                     <h3 class="mb-2"><a href="#">SEO & Search Optimization</a></h3>
                                     <div class="service-price my-4">
@@ -1181,122 +1299,6 @@
                 info@pixellogic.in</a>
         </div>
 
-
-
-
-        <!-- Service Inquiry Modal -->
-        <div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content border-0 shadow-lg rounded-4">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header border-bottom-0 pb-0">
-                        <h1 class="modal-title fs-4 fw-bold" id="serviceModalLabel">Get a Free Quote</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-
-                    <!-- Modal Body & Form -->
-                    <div class="modal-body text-start pt-2">
-                        <p class="text-muted small mb-4">Select a service package and submit to chat directly with
-                            us on WhatsApp.</p>
-
-                        <form id="whatsappModalForm">
-                            <!-- Name Field -->
-                            <div class="mb-3">
-                                <label for="modalUserName" class="form-label fw-medium">Your Name *</label>
-                                <input type="text" class="form-control" id="modalUserName"
-                                    placeholder="Enter your full name" required>
-                            </div>
-
-                            <!-- Phone Number Field -->
-                            <div class="mb-3">
-                                <label for="modalUserPhone" class="form-label fw-medium">Phone Number *</label>
-                                <input type="tel" class="form-control" id="modalUserPhone"
-                                    placeholder="Enter your mobile number" required>
-                            </div>
-
-                            <!-- Service Selection Dropdown -->
-                            <div class="mb-3">
-                                <label for="modalServiceSelect" class="form-label fw-medium">Select Service
-                                    *</label>
-                                <select class="form-select" id="modalServiceSelect" required>
-                                    <option value="" selected disabled>Choose a service...</option>
-
-                                    <!-- Website Packages -->
-                                    <optgroup label="Website Design & Development">
-                                        <option value="Starter Website (₹7,999)">Starter Website — ₹7,999</option>
-                                        <option value="Business Website (₹14,999)">Business Website — ₹14,999
-                                        </option>
-                                        <option value="Premium Website (₹24,999)">Premium Website — ₹24,999</option>
-                                    </optgroup>
-
-                                    <!-- E-Commerce Packages -->
-                                    <optgroup label="E-Commerce Stores">
-                                        <option value="Shopify Store (Starting ₹24,999)">Shopify Store — Starting
-                                            ₹24,999</option>
-                                        <option value="WooCommerce Store (Starting ₹19,999)">WooCommerce Store —
-                                            Starting ₹19,999</option>
-                                        <option value="Laravel E-Commerce (Starting ₹39,999)">Laravel E-Commerce —
-                                            Starting ₹39,999</option>
-                                    </optgroup>
-
-                                    <!-- SEO Packages -->
-                                    <optgroup label="SEO Services">
-                                        <option value="Basic SEO Setup (₹4,999)">Basic SEO (One-time) — ₹4,999
-                                        </option>
-                                        <option value="Standard SEO (₹7,999/mo)">Standard SEO — ₹7,999/month
-                                        </option>
-                                        <option value="Premium SEO (₹14,999/mo)">Premium SEO — ₹14,999/month
-                                        </option>
-                                    </optgroup>
-
-                                    <!-- Digital Marketing -->
-                                    <optgroup label="Digital Marketing">
-                                        <option value="Google/Meta Ads Setup (₹3,999)">Google/Meta Ads Setup —
-                                            ₹3,999</option>
-                                        <option value="Monthly Ads Management (₹7,999/mo)">Monthly Ads Management —
-                                            ₹7,999/month</option>
-                                    </optgroup>
-
-                                    <!-- Branding & Graphic Design -->
-                                    <optgroup label="Branding & Design">
-                                        <option value="Logo Design (₹999)">Logo Design — ₹999</option>
-                                        <option value="Brand Identity Package (₹4,999)">Full Brand Identity — ₹4,999
-                                        </option>
-                                        <option value="Social Media Graphics (Starting ₹299)">Graphic Design —
-                                            Starting ₹299</option>
-                                    </optgroup>
-
-                                    <!-- Maintenance -->
-                                    <optgroup label="Maintenance & Support">
-                                        <option value="Website Maintenance (₹1,499/mo)">Website Maintenance —
-                                            ₹1,499/month</option>
-                                    </optgroup>
-                                </select>
-                            </div>
-
-                            <!-- Message Field -->
-                            <div class="mb-4">
-                                <label for="modalUserMessage" class="form-label fw-medium">Project Details
-                                    (Optional)</label>
-                                <textarea class="form-control" id="modalUserMessage" rows="3"
-                                    placeholder="Tell us briefly about your business or specific requirements..."></textarea>
-                            </div>
-
-                            <!-- Submit Button -->
-                            <button type="submit"
-                                class="btn btn-whatsapp-custom w-100 py-3 rounded-3 d-flex align-items-center justify-content-center gap-2">
-                                <i class="fa-brands fa-whatsapp fs-4 whatsapp-icon"></i>
-                                <span>Send Query via WhatsApp</span>
-                            </button>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
         <!-- SCROLL TO TOP
     ================================================== -->
         <div class="scroll-top-percentage"><span id="scroll-value"></span></div>
@@ -1330,7 +1332,8 @@
         <script src="js/popper.min.js"></script>
 
         <!-- bootstrap -->
-        <script src="js/bootstrap.min.js"></script>
+        <!-- <script src="js/bootstrap.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
         <!-- scroll -->
         <script src="js/jquery.scrollbar.min.js"></script>

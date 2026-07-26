@@ -7749,3 +7749,35 @@ footer label {
   transform: translateY(1px);
   box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
 }
+
+/* Ensure modal and backdrop sit on top of everything on mobile */
+.modal {
+  z-index: 1055 !important;
+}
+
+.modal-backdrop {
+  z-index: 1050 !important;
+}
+
+/* Mobile Modal Viewport & Stacking Fix */
+@media (max-width: 767.98px) {
+  /* Force modal backdrop behind the modal body on mobile */
+  .modal-backdrop {
+    z-index: 100000 !important;
+  }
+  
+  .modal {
+    z-index: 100001 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Prevent theme layout transforms from clipping the mobile dialog */
+  .modal-dialog {
+    margin: 1rem auto !important;
+    max-width: 92% !important;
+  }
+  
+  .modal-content {
+    overflow: visible !important;
+  }
+}
