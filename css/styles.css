@@ -617,10 +617,9 @@ a.text-white-hover:hover {
 }
 
 .display-custom-3 {
-    font-size: 128px;
+    font-size: 100px;
     font-weight: 800;
     line-height: 0.9em;
-    letter-spacing: -0.04em
 }
 
 @media screen and (max-width: 1199px) {
@@ -2598,7 +2597,6 @@ a.text-white-hover:hover {
     position: relative;
     overflow: hidden;
     border-radius: 0.375rem;
-    min-height: 579px;
     padding: 40px;
     transition: all 0.4s ease;
     border: 1px solid rgba(255, 255, 255, 0.1)
